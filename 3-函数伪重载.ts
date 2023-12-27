@@ -53,6 +53,7 @@ type NumberOrArray = number | number[]
 type ObjOrNumberOrArray = NumberOrArray | Object
 
 // 根据需求把所有可能出现的入参情况写上
+// NOTE: 主要是为了提供对应的类型提示和 JSDoc 生成
 function sum1(base: number, increment: number): number
 function sum1(increment: number, baseArray: number[]): number[]
 function sum1(baseArray: number[], increment: number): number[]
