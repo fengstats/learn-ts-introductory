@@ -84,3 +84,6 @@ set.add(1)
 const map = new Map<string, number>()
 map.set('1', 2)
 // map.set(2, 1) // ERROR: 类型错误
+
+// 使其变成一个空模块导出，避免 TypeScript 变量提示错误，保证无依赖关系
+export {}
